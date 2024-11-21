@@ -87,7 +87,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
 
         <div className="lg:col-span-1">
           <label className="block text-sm font-medium text-gray-700 mb-3">
-            Price Range: {formatPrice(Number(filters.priceMin) || minPrice)}
+            Price Range: {formatPrice(Number(filters.priceMax) || maxPrice)}
           </label>
           <div>
             <input
@@ -96,7 +96,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
               min={minPrice}
               max={maxPrice}
               step={step}
-              value={filters.priceMin || minPrice}
+              value={filters.priceMax || minPrice}
               onChange={handleChange}
               className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-emerald-600"
             />
