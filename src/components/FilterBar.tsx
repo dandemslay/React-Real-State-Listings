@@ -96,7 +96,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
               min={minPrice}
               max={maxPrice}
               step={step}
-              value={filters.priceMax || maxPrice}
+              value={filters.priceMin || minPrice}
               onChange={handleChange}
               className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-emerald-600"
             />
