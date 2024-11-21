@@ -36,7 +36,7 @@ function App() {
   const fetchListings = async () => {
     try {
       const response = await fetch(
-        './data/mockListings', // Can change for the listing POST Rest API
+        'https://s3.us-west-2.amazonaws.com/cdn.number8.com/LA/listings.json', // Can change for the listing POST Rest API
         {
           headers: {
             Accept: 'application/json',
